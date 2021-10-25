@@ -11,7 +11,7 @@ DOCKER_TIME_TAG="$(date +%s)"
 DOCKER_LATEST_TAG=latest
 
 # Logout from Docker
-docker logout
+docker logout $AWS_DOCKER_REGISTRY_URL
 # Login in AWS container registry with your AWS credentials
 aws ecr get-login-password --profile $PROFILE --region $REGION | docker login --username AWS --password-stdin $AWS_DOCKER_REGISTRY_URL
 # Build Docker image
