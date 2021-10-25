@@ -1,5 +1,7 @@
+# Ignore all folders and files
 *
 
+# Except
 !src
 !package*.json
 !tsconfig*.json
