@@ -1,0 +1,12 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "468847757722.dkr.ecr.eu-west-1.amazonaws.com/frol8612-cart-api:latest",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": 8080
+    }
+  ]
+}
